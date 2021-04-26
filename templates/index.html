@@ -1,0 +1,334 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>EduVi</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<!--[if lt IE 9]> <script src="js/html5shiv.js"></script> 
+	<script src="js/respond.min.js"></script> <![endif]--> 		
+        <!-- Place favicon.ico in the root directory -->
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,300,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/normalize.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/font-awesome.min.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/owl.carousel.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/responsive.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+
+    </head>
+<body >
+		 <!-- start preloader -->
+        <div id="loader-wrapper">
+            <div class="logo"></div>
+            <div id="loader">
+            </div>
+        </div>
+        <!-- end preloader -->
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+		
+		
+<!-- Start Header Section -->
+<header class="main_menu_sec navbar navbar-default navbar-fixed-top">
+	<div class="container" >
+		<div class="row" >
+			<div class="col-md-3 col-sm-12 col-lg-1" >
+				<div class="lft_hd" >
+					<a href="index.html" ><img src="{{url_for('static', filename='img/logo.png')}}" alt=""/></a>
+				</div>
+			</div>			
+			<div class="col-lg-9 col-md-9 col-sm-11">
+<div class="rgt_hd">					
+			<div class="main_menu">
+						<nav id="nav_menu">
+							<button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							</button>	
+						<div id="navbar">
+							<ul>
+								<li></li> 					
+								<li><a class="page-scroll" href=login>Login</a></li>
+
+							</ul>
+						</div>		
+						</nav>			
+					</div>					
+						
+				</div>
+			</div>	
+		</div>	
+	</div>	
+</header>
+<!-- End Header Section -->
+
+<!-- start slider Section -->
+<section id="slider_sec">
+	<div class="container">
+		<div class="row">
+			<div class="slider">
+					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				  </ol>
+
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<div class="wrap_caption">
+						  <div class="caption_carousel">
+							<h1>I wish you like it</h1>
+							<p>SO GOOD DESIGN FOR EDUCATIONAL SITE</p>
+						  </div>						
+						</div>
+					</div>					
+					<div class="item">
+						<div class="wrap_caption">
+						  <div class="caption_carousel">
+							<h1>This is educational site</h1>
+							<p>SO GOOD DESIGN FOR EDUCATIONAL SITE</p>
+						  </div>						
+						</div>
+					</div>					
+					<div class="item ">
+						<div class="wrap_caption">
+						  <div class="caption_carousel">
+							<h1>Let's start learning</h1>
+							<p>SO GOOD DESIGN FOR EDUCATIONAL SITE</p>
+						  </div>						
+						</div>
+					</div>			
+				  </div>
+
+				  <!-- Controls -->
+				  <a class="left left_crousel_btn" href="#carousel-example-generic" role="button" data-slide="prev">
+					<i class="fa fa-angle-left"></i>
+					<span class="sr-only">Previous</span>
+				  </a>
+				  <a class="right right_crousel_btn" href="#carousel-example-generic" role="button" data-slide="next">
+					<i class="fa fa-angle-right"></i>
+					<span class="sr-only">Next</span>
+				  </a>
+				</div>
+			</div>	
+		</div>			
+	</div>	
+</section>
+<!-- End slider Section -->
+
+<!-- start blog Section -->
+<section id="blg_sec">
+	<div class="container">
+		<div class="row">
+		  <div class="title_sec">
+				<h1>Subjects</h1>
+				<h2>It's time to think</h2>
+			</div>		
+			<div class=" col-sm-12 col-lg-12 col-md-12">
+
+				
+				
+				<div class="sngl_blg">						
+				  <div class="container-fluid">
+  					<div class="row">	
+  						<div class="img-wrap">		
+    						<img src="{{url_for('static', filename='img/physics.png')}}" class="img-responsive" alt="">
+   						  <div class="row_url">
+
+					<h1> <font color="#F5C809" size="+3">Physics </font> </h1> 
+							  
+							</div>	
+						</div>
+					</div>	  			
+				</div>
+				</div>
+				
+				<div class="sngl_blg">						
+				 <div class="container-fluid">
+  					<div class="row">	
+  						<div class="img-wrap">		
+    						<img src="{{url_for('static', filename='img/maths.png')}}"
+							class="img-responsive" alt="">
+   						  <div class="row_url">
+							<h1><font color="#F5C809" size="+3">Math</font></h1>
+							</div>	
+						</div>
+					</div>	  			
+				</div>
+						
+				</div>				
+
+				<div class="sngl_blg">						
+
+				<div class="container-fluid">
+  					<div class="row">	
+  						<div class="img-wrap">		
+    					<img src="{{url_for('static', filename='img/chemistry.png')}}" class="img-responsive" alt=""/>
+   						  <div class="row_url">
+							<h1><font color="#F5C809" size="+3">Chemistry</font></h1>
+							</div>	
+						</div>
+					</div>	  
+				</div>
+				</div>				
+				<div class="sngl_blg">						
+
+				<div class="container-fluid">
+  					<div class="row">	
+  						<div class="img-wrap">							
+					<img src="{{url_for('static', filename='img/geography.png')}}" class="img-responsive" alt=""/>
+   						  <div class="row_url">
+							<h1><font color="#F5C809" size="+3">geography</font></h1>
+							</div>	
+						</div>
+					</div>						
+					</div>	
+				</div>	
+					<div class="sngl_blg">					<div class="container-fluid">
+  					<div class="row">	
+  						<div class="img-wrap">									
+					<img src="{{url_for('static', filename='img/business.png')}}" class="img-responsive" alt=""/>
+   						  <div class="row_url">
+							<h1><font color="#F5C809" size="+3">business</font></h1>
+							</div>	
+						</div>
+					</div>						
+					</div>	
+					
+					
+
+				</div>	
+				<div class="sngl_blg">						
+					<div class="container-fluid">
+  					<div class="row">	
+  						<div class="img-wrap">									
+					<img src="{{url_for('static', filename='img/biology.png')}}" class="img-responsive" alt=""/>
+   						  <div class="row_url">
+							<h1><font color="#F5C809" size="+3">biology</font></h1>
+							</div>	
+						</div>
+					</div>						
+					</div>	
+					
+
+				</div>	
+				<div class="sngl_blg">						
+				  <div class="container-fluid">
+  					<div class="row">	
+  						<div class="img-wrap">		
+					<img src="{{url_for('static', filename='img/economics.png')}}" class="img-responsive" alt=""/>
+   						  <div class="row_url">
+							<h1><font color="#F5C809" size="+3">economic</font></h1>
+							</div>	
+						</div>
+					</div>	  			
+				</div>					
+					
+					
+
+				</div>	
+			</div>	
+		</div>
+	</div>
+</section>
+<!-- start Blog Section -->
+
+<!-- start footer Section -->
+<footer id="ft_sec">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="ft">						
+										
+				</div>
+				<ul class="copy_right">
+					<li>&copy;Kirgod</li>
+					<li>developer by kiraprint</li>
+				</ul>					
+			</div>	
+		</div>
+	</div>
+</footer>
+<!-- End footer Section -->
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="{{url_for('static', filename='js/vendor/jquery-1.11.3.min.js')}}"></script>
+
+<script src="{{url_for('static', filename='js/isotope.pkgd.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/appear.js')}}"></script>
+<script src="{{url_for('static', filename='js/jquery.counterup.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/waypoints.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/owl.carousel.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/showHide.js')}}"></script>
+<script src="{{url_for('static', filename='js/jquery.nicescroll.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/jquery.easing.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/scrolling-nav.js')}}"></script>
+<script src="{{url_for('static', filename='js/plugins.js')}}"></script>
+
+<script src="{{url_for('static', filename='js/main.js')}}"></script>
+
+<script src="{{url_for('static', filename='js/showHide.js')}}" type="text/javascript"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+
+   $('.show_hide').showHide({			 
+		speed: 1000,  // speed you want the toggle to happen	
+		easing: '',  // the animation effect you want. Remove this line if you dont want an effect and if you haven't included jQuery UI
+		changeText: 1, // if you dont want the button text to change, set this to 0
+		showText: 'View',// the button text to show when a div is closed
+		hideText: 'Close' // the button text to show when a div is open
+					 
+	}); 
+
+
+});
+
+</script>
+<script>
+    jQuery(document).ready(function( $ ) {
+        $('.counter').counterUp({
+            delay: 10,
+            time: 1000
+        });
+    });
+</script>
+
+<script>
+
+  //Hide Overflow of Body on DOM Ready //
+$(document).ready(function(){
+    $("body").css("overflow", "hidden");
+});
+
+// Show Overflow of Body when Everything has Loaded 
+$(window).load(function(){
+    $("body").css("overflow", "visible");        
+    var nice=$('html').niceScroll({
+	cursorborder:"5",
+	cursorcolor:"#00AFF0",
+	cursorwidth:"3px",
+	boxzoom:true, 
+	autohidemode:true
+	});
+
+});
+</script>
+
+<script type="text/javascript" src="{{url_for('static', filename='js/zooming.js')}}"></script>
+
+    </body>
+</html>
