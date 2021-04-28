@@ -11,8 +11,12 @@ class Homework(SqlAlchemyBase):
     subject = sqlalchemy.Column(sqlalchemy.String, nullable=True)
     task = sqlalchemy.Column(sqlalchemy.String, nullable=True)
     post_date = sqlalchemy.Column(sqlalchemy.Date, default=datetime.datetime.now())
-    teacher_id = sqlalchemy.Column(sqlalchemy.Integer, sqlalchemy.ForeignKey("teachers.id"))
-    grade_id = sqlalchemy.Column(sqlalchemy.Integer, sqlalchemy.ForeignKey("grade_id"))
+    user_id = sqlalchemy.Column(sqlalchemy.Integer, sqlalchemy.ForeignKey("users.id"))
+    user = orm.relation('User')
 
-    grade = orm.relation('Grade')
-    teacher = orm.relation('Teacher')
+
+    # teacher_id = sqlalchemy.Column(sqlalchemy.Integer, sqlalchemy.ForeignKey("teachers.id"))
+    # grade_id = sqlalchemy.Column(sqlalchemy.Integer, sqlalchemy.ForeignKey("grade_id"))
+
+    # grade = orm.relation('Grade')
+    # teacher = orm.relation('Teacher')
