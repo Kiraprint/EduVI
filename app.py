@@ -1,10 +1,11 @@
 import datetime
 
 from flask import Flask, render_template, redirect, abort
-from flask_login import LoginManager, login_user
+from flask_login import LoginManager, login_user, current_user
 from flask_wtf.csrf import CSRFProtect
 
 from data import db_session
+from data.homework import Homework
 from data.user import User
 from forms.loginform import LoginForm
 
@@ -72,6 +73,21 @@ def login():
             abort(404)
 
     return render_template('login.html', form=form)
+
+
+@app.route('/homeworks/<subject>')
+def homes(subject):
+
+    if current_user.is_authenticated:
+        user = current_user()
+        if user.grade_id:
+            db = db_session.create_session()
+            hmwrks = db.query(Homework).filter(Homework.grade_id == user.grade_id, Homework.subject == subject)
+            return render_template('homeworks', title=subject, hmwrks=hmwrks)
+        else:
+            redirect('/login')
+    else:
+        return redirect('/login')
 
 
 if __name__ == '__main__':

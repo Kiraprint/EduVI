@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+<h1 style="background-color: #0080bf">Homework in {{title}}</h1>
+{% for item in hmwrks%}
+<div class="col-md6 border rounded">
+    <h2>{{item.post_date}}</h2>
+    <div>
+        {{item.task}}
+    </div>
+    <div>
+        Added by {{item.user.name}} {{item.user.surname}}
+    </div>
+</div>
+{% endfor %}
+
+</head>
+<body>
+
+</body>
+</html>

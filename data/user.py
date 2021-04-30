@@ -14,11 +14,13 @@ class User(SqlAlchemyBase, UserMixin):
     surname = sqlalchemy.Column(sqlalchemy.String, nullable=True)
     name = sqlalchemy.Column(sqlalchemy.String, nullable=True)
     email = sqlalchemy.Column(sqlalchemy.String, index=True, unique=True, nullable=True)
+    grade_id = sqlalchemy.Column(sqlalchemy.Integer, nullable=True)
 
     hashed_password = sqlalchemy.Column(sqlalchemy.String, nullable=True)
     created_date = sqlalchemy.Column(sqlalchemy.DateTime,default=datetime.datetime.now)
     homeworks = orm.relation("Homework", back_populates='user')
 
+    grades = orm.relation("Grade", secondary='association', backref="users")
     def set_password(self, password):
         self.hashed_password = generate_password_hash(password)
 
